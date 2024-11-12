@@ -1,0 +1,49 @@
+PROBLEM STATEMENT
+1) SetUp GITHUB Account
+
+2) Create a new bare repository in the local machine
+
+3) Onboard developers
+
+4) Perform Basic checks
+
+5) Developers shall be able to upload all local changes in the source code to the remote repository.
+
+
+
+
+
+LEARNINGS
+
+1) How to create GITHUB account?
+--> register by sign up to github account
+
+2) How to create PRIVATE GITHUB repository?
+
+--> create new repository 
+--> select private repository option (you choose who can see and commit changes)
+--> now click create repository
+
+3) How to PUSH code/files from local to GIHUB repository?
+
+--> first add origin to current directory using below command
+
+
+
+4) How to add user to GITHUB repository?
+
+
+
+5) How to create pull request? 
+
+
+
+6) How to enforce approval mechanism while merging Pull request?
+
+
+
+7) How to approve pull request and merge the code?
+
+
+
+8) How to generate SSH Keys and clone the project in local using SSL?
