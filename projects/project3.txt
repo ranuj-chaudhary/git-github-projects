@@ -45,9 +45,15 @@ git checkout branchname
 
 4) How to revert changes in GIT?
 
---> uncommit changes to unstage
+--> uncommit changes to
 git reset Head~1
 
+--> will revert to commitID provided (also remove if any files created)
+git revert commitID
 
+--> remove file
+git rem fileName.txt
+
+(now commit the changes after deleting the file)
 
 5) How to use Git rebase?
