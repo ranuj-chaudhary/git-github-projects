@@ -1,0 +1,53 @@
+PROBLEM STATEMENT
+
+--> There are multiple releases going on in parallel for schola release 1.0 is targeted towards
+ the U.S and release 2.0 is targeted towards the India and base code remain the same.
+
+--> Some lacalisation modification is required.
+
+--> New location feature is to be developed.
+
+
+1) Need to create branches
+
+2) Need to move or remove the files from repositories.
+
+3) Need to create multiple branches to deploy the features.
+
+4) Need to do bug fixes.
+
+5) Need to revert the code changes.
+
+LEARNINGS
+
+1) How to remove unwanted files from local repositories?
+
+
+2) How to create and delete branches in GIT?
+
+--> create new branch 
+git branch branchname
+
+
+--> delete branch
+
+git branch -D feature1
+
+
+3) How to switch between different branches ?
+
+--> create new branch and switch to created branch
+git switch -c branchName
+
+--> switch to branch 
+git checkout branchname
+
+
+4) How to revert changes in GIT?
+
+--> uncommit changes to unstage
+git reset Head~1
+
+
+
+5) How to use Git rebase?
