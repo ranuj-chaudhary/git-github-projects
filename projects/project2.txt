@@ -1,4 +1,7 @@
-PROBLEM STATEMENT
+PROJECT STATEMENT
+
+Create GITHUB account for skola as company want to expand in different country.
+
 1) SetUp GITHUB Account
 
 2) Create a new bare repository in the local machine
@@ -9,13 +12,10 @@ PROBLEM STATEMENT
 
 5) Developers shall be able to upload all local changes in the source code to the remote repository.
 
-
-
-
-
 LEARNINGS
 
 1) How to create GITHUB account?
+
 --> register by sign up to github account
 
 2) How to create PRIVATE GITHUB repository?
@@ -24,26 +24,53 @@ LEARNINGS
 --> select private repository option (you choose who can see and commit changes)
 --> now click create repository
 
+
 3) How to PUSH code/files from local to GIHUB repository?
 
 --> first add origin to current directory using below command
 
+git remote add origin https://github.com/ranuj-chaudhary/git-github-projects.git
 
+--> if error: remote origin already exists.
+
+git remote set-url origin https://github.com/ranuj-chaudhary/git-github-projects.git
+
+--> Push to github repository
+
+git push -u origin main
 
 4) How to add user to GITHUB repository?
 
-
+--> go to  repository setting 
+--> go to collabarators
+--> add collabarators by email or username
 
 5) How to create pull request? 
 
-
+    --> create new branch or and modify or create some new files
+    --> push changes to github
 
 6) How to enforce approval mechanism while merging Pull request?
 
-
+--> go to  repository setting 
+--> go to branches
+--> go to Add branch ruleset
+--> set Ruleset Name
+--> Select option  
+    --Require a pull request before merging
+    --Restrict deletions
+    --Block force pushes
 
 7) How to approve pull request and merge the code?
 
-
+--> create ruleset in repository setting in branch
 
 8) How to generate SSH Keys and clone the project in local using SSL?
+
+--> Open GitBash in user folder
+ users/
+
+--> Command to create ssh key:
+ssh-keygen -t rsa -b 4096 -C "ranujchoudhary@gmail.com"
+
+(this will create public and private key in .ssh folder in c:/users/)
