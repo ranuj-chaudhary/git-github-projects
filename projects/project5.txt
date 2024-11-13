@@ -1,0 +1,71 @@
+PROBLEM STATEMENT
+
+--> Developers started contributing but developer are facing code merge issues.
+
+Solution: Must be some common workflow
+Answer: Implement the common work flow GIT FLOW.
+
+MASTER  a1 ------> a2 ------> a3 ------> a4 ------> a5 
+        |         
+DEVELOP | -------> a6 ------> a7 ------> a8 ------> a9
+        |                                 |         |
+FEATURE | -------> a6 ------> a7 ---------|         |
+        |                                           |
+FEATURE | ------------------> a8 -------------------|
+
+
+LEARNINGS
+
+1) How to create GITFLOW for your project?
+
+--> Initialise Git flow
+
+INIT COMMAND GIT FLOW
+ git flow init
+
+SETUP DEVELOP UPSTREAM BRANCH TO REMOTE
+git push --set-upstream origin develop
+
+NOte: The above command is used to push a local branch to a remote repository
+ for the first time and to set up tracking so that future pushes can be done more simply
+with just git push.
+
+
+CREATE FEATURE BRANCH
+git flow feature start feature1.0
+
+Create New feature file , add amd commit
+
+FINISH FEATURE BRANCH
+git flow feature finish feature1.0
+
+Note:
+a) Now we will switch to develop branch and file of feature will
+merge with develop branch.
+b) Feature branch will be deleted automatically.
+
+
+CREATE RELEASE BRANCH
+git flow release start release1.0
+
+Create New feature file , add amd commit
+
+
+SETUP REALEASE BRANCH UPSTREAM TO REMOTE
+
+git push --set-upstream origin release/release1.0
+
+FINISH RELEASE BRANCH
+git flow release finish release1.0
+
+
+2) How to HOTFIX in your existing respository?
+Note: used to fix bug and push bug fixes to both main and develop branch.
+
+CREATE HOTFIX BRANCH
+git flow hotfix start hotfix1.0
+
+Create New fix or bug file , add and commit
+
+FINISH HOTFIX BRANCH
+git flow hotfix finish hotfix1.0
