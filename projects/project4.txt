@@ -1,0 +1,50 @@
+PROBLEM STATEMENT
+
+--> Scola is planning to add new feature to you existing feature 
+--> define the branching strategy
+
+MASTER  a1 ------> a2 ------> a3 ------> a4 ------> a5 
+        |         
+DEVELOP | -------> a6 ------> a7 ------> a8 ------> a9
+        |                                 |         |
+FEATURE | -------> a6 ------> a7 ---------|         |
+        |                                           |
+FEATURE | ------------------> a8 -------------------|
+
+
+LEARNINGS
+
+1) How to create different branches in GIT?
+
+git branch developerBranch
+
+git switch -c featureBranch
+
+
+2) How to clone the project from GIHUB repository to local?
+
+git clone url
+
+
+3) How to use merge tool?
+
+In main branch
+
+--> developer 1 make changes in same file and push changes before developer2
+
+--> developer2 make change in same file
+
+--> developer2 merge file to main < now merge conflict happen
+> main 
+git merge feature1
+
+
+
+4) How to resolve merge conflicts?
+
+use editor for mergin issues. Use VS_CODE as mergeissue handler.
+
+
+
+
+
