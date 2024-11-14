@@ -1,0 +1,30 @@
+PROBLEM STATEMENT
+
+--> Team in India is more confortable with VSCODE IDE and USA team is more confortable with
+IntelliJ IDEA.
+--> Make sure both teams can perform all the required Git operation.
+
+1) How to download and install VSCode?
+
+--> install the vscode in windows or mac
+--> install the vscode in windows or mac
+
+
+2) How to integrate VSCODE with Git?
+
+
+
+3) How to commit code/file on remote repositories using VSCode tool?
+
+
+
+4) How to download and install IntelliJ IDEA?
+
+
+
+5) How to integrate VSCode with IntelliJ IDEA?
+
+
+
+6) How to commit code/file on remote repositories using IntelliJ IDEA?
+

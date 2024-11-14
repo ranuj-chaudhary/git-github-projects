@@ -68,4 +68,4 @@ git flow hotfix start hotfix1.0
 Create New fix or bug file , add and commit
 
 FINISH HOTFIX BRANCH
-git flow hotfix finish hotfix1.0
+git flow hotfix finish hotfix1.0                                                                                                                
