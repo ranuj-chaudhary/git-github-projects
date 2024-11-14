@@ -11,7 +11,7 @@ IntelliJ IDEA.
 
 
 2) How to integrate VSCODE with Git?
-
+clone directory with github
 
 
 3) How to commit code/file on remote repositories using VSCode tool?
