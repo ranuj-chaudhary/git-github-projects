@@ -1,0 +1,31 @@
+PROBLEM STATEMENT
+
+--> scola got an project for electronics cars for ecommerce companies.
+--> ecommerce provided tools and told to integrate with GitLab.
+
+Client Requirements:
+
+--> For source code management, use GIT along with Gitlab repositories.
+--> Make sure that development team can perform all the operations.
+
+
+LEARNINGS
+
+1) How to create GitLab account?
+
+
+2) How to work with GitLab remote repositories?
+
+
+3) How to clone GitLab remote repositories into local systems?
+
+
+4) How to perform PUSH and PULL operations on GitLab repositories?
+
+
+5) How to merge branches in GitLab?
+
+
+
+
+
