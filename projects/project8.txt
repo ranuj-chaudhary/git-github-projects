@@ -1,0 +1,31 @@
+PROBLEM STATEMENT
+
+--> scola got an project for electronics cars for ecommerce companies.
+--> ecommerce provided tools and told to integrate with GitLab.
+
+Client Requirements:
+
+--> For source code management, use GIT along with Bitbucket repositories.
+--> Make sure that development team can perform all the operations.
+
+
+LEARNINGS
+
+1) How to create Bitbucket account?
+
+
+2) How to work with Bitbucket remote repositories?
+
+
+3) How to clone Bitbucket remote repositories into local systems?
+
+
+4) How to perform PUSH and PULL operations on Bitbucket repositories?
+
+
+5) How to merge branches in Bitbucket?
+
+
+
+
+
