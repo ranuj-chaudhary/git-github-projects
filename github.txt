@@ -1,0 +1,175 @@
+GITHUB
+
+OPTION 1: 
+EXISTING REPO ON GITHUB
+
+CLONE REPOSITORY
+- create repo on github
+- git clone url
+Note: Will add remote by itself
+
+…or create a new repository on the command line
+echo "# github-practice" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/ChaudharyRanuj/github-practice.git
+git remote add origin https://github.com/ChaudharyRanuj/phpcms.git
+git push -u origin main
+
+
+OPTION 2:
+EXSTING REPO ON LOCAL MACHINE
+
+if you already have repo on local machine 
+create a new repo on Github
+Connect your local repo (add a remote)
+Push up your changes to Github
+
+How do I disassociate a git repo from the origin from which it was cloned?
+- git branch -a
+
+
+GIT PUSH
+
+- git push -u origin main
+if we use as upstream to push in branch than a connection is build in local and repo branch. After than u can push directly by git push only.
+
+IF YOU ARE PUSHING FROM BRANCH
+- git push -u origin branchName or git push --set-upstream origin class-based-react
+if we use as upstream to push in branch than a connection is build in local and repo branch. After than u can push directly by git push only.
+Note: whenever push branch first time 
+
+- git push origin master 
+will create new master branch on gitHub as no branch with this name
+Note: if we want to match the master branch with
+
+
+ git branch -M main
+(change the name of exsiting branch to main)
+
+- git push origin main
+- after changing the name of master branch push to the main branch
+
+- git push origin cats:master 
+- push cats branch to master branch
+
+- git push origin pancake:cake
+- push the changes to pancake branch and change the name to cake
+
+GIT TRACK FETCH AND PULL
+1st
+GIT FETCH
+git fetch 
+
+2nd
+Tracking Remote Branches
+git branch -r
+
+3rd
+git pull
+
+4TH 
+Resolve Merge Conflicts
+
+5th 
+Push all the details to Remote Branch
+
+FETCHING & PULLING
+
+- git checkout origin/main
+(go back to origin/main) or checking out remote tracking
+
+Working with Remote Branches
+
+- git clone url
+clone the branch to local folder
+
+- git branch -r
+- check remote branch
+
+- git switch puppies 
+                   or
+ - git checkout --track origin/puppies (old command)
+- connect the remote branch automatically by switching
+ to the remote branch.
+
+- git fetch
+- take changes from remote repo but not integrated in our working files.
+
+- git fetch origin
+
+- git fetch remote branchName 
+Ex: for fetching only branchChanges
+
+- git checkout origin/master
+after fetching the changes origin/master get ahead of main branch.
+After that we can checkout to see the origin/master. 
+
+GITHUB PUBLIC AND PRIVATE REPO VISIBILTY
+
+PUBLIC REPO
+anyone on internet can see this repository.
+ You choose who can commit.
+This repository is accessible, discoverable, clonable anyone on internet or search in GITHUB.
+But need accessibility for pushing and pulling request to do that they will need collaberating preveliges by the owner.
+
+PRIVATE REPO
+Owner and Collabrorator is give access too.
+For private projects or for organisation and enterprise projects.
+
+Adding the Collaborators
+
+In Manage Access we can add collborator with account on GITHUB. 
+Invition is send after invite.
+
+Collaborators Access Previliges
+In hands of owner how mush previliges to give
+
+Collaborator Limitations
+not have access to settings
+
+REAMEs FILE
+
+README.md 
+md is markdown files , ending with the .md extension. Markdown tool is used
+for text-to-HTML converstion for web writers.
+This is the file where you can write a long description of your project.
+Note: 1) if you put a README in the root of your project, Github will recogonize
+it and automatically display it on the repo's home page.
+ 
+A readme file is used to communicate important information about a repository
+including-
+- What the project does.
+- How to run the project
+-  Why it's notworthy
+- Who maintains the project
+
+GITHUB GISTS
+Github Gists are a simple way to share code snippets and useful fragments with others. Gists are much easier to create, but offer far fewer features than a typical Github respository.
+
+GITHUB PAGES
+
+Github pages are public webpages that are hosted and published via Gihub. They allow you to create and published via Github.
+Note: only static webpages
+
+User site 
+username.github.io
+for porfolio website
+
+
+Project Sites
+username.github.io/repo-name
+
+ForDeployed version of project.
+
+How to host page on Github?
+
+
+
+
+
+
+
+
