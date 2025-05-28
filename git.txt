@@ -1,0 +1,218 @@
+
+GIT COMMANDS
+
+QUIT IN GITBASH
+q (key)
+
+CLEAR EVERYTHING ON GIT BASH SCREEN
+clear
+
+BEFORE STARTING THE PROJECT SET UP USERNAME & EMAIL ADDRESS
+Setting user name: $ git config --global user.name "Ranuj Chaudhary"
+
+Setting user email: $ git config --global user.email ranujchoudhary@gmail.com
+
+print working directory -
+ pwd
+
+back one step in directory -
+cd .. 
+
+list of working directory - 
+ls
+
+Provide contents or details of repository objects
+git cat fileName 
+
+move in directory - 
+cd directoryName
+
+cd full form is CHANGE DIRECTORY
+
+create new file - 
+touch file name with extension (create multiple files with comma seperated names)
+Example: touch patronus.txt, index.html
+
+remove folder
+rm -rf folderName
+
+remove file
+rm fileName fileName fileName
+Note: we can remove single or multiple files.
+
+make directory(folder) - 
+mkdir directoryname
+
+add file after edit in file - 
+git add filename with extention (Ex: git add index.html)
+
+TRACK UNSTAGED CHANGES
+git status
+
+UNSTAGED ADDED FILE
+git reset
+
+commit added file - 
+git commit -m 'add your commit message here'
+
+add file and commit together - 
+git commit -am 'commit message here'
+-a
+
+add all files -
+git add .
+Note: add all files only if these file are associated individual branch without any other interaction.
+
+GIT BRANCHING
+
+CREATE BRANCH
+git branch nameOfBranch
+
+RENAME BRANCH
+git branch -m newBranchName
+
+
+CREATE BRANCH & SWITCH TO CREATED BRANCH
+git switch -c nameOfBranch
+
+SWITCH BRANCH
+git switch branchName
+return to previous state where u come or undo this operation
+
+DELETE BRANCH IF NO PENDIND CHANGES
+.git branch --delete <branch_name> or  .git branch -d <branch_name>
+
+DELETE BRANCH WITH UNSTAGED CHANGES
+.git branch --delete --force <branch_name> or .git branch -D <branch_name>
+
+
+git checkout 
+- create new branch, restore files and undo history
+
+
+CHECK COMMITS
+git log
+
+CHECKS COMMITS IN ONELINE
+git log --oneline
+
+MERGE BRANCH
+git merge branchname
+- merge branch
+Note: must switch to main branch to merge sub-branch 
+
+MERGE ABORT
+git merge --abort
+
+
+CHECK UNSTAGED AND STAGED CHANGES IN FILES, DIRECTORY
+
+git diff - check unstaged changes only
+
+git diff --staged or git diff --cached - check staged changes only
+
+git diff head -  check both staged and unstaged changes
+
+git diff commit1..commit2 - difference between two commits
+
+git diff branch1..branch2 - difference between two branches
+
+git diff  branch1..branch2 filename.txt - difference in branch
+
+STASHING
+
+When we are trying to switch to new branch with uncommited changes than we use
+stashing to move to other branch without commite the current branch by doing the stashing.                                                           
+                                                                   OR
+Git Provides an easy way of stasing these uncommited changes so that we can return
+to them later, without having to make unnecessary commits.
+
+git stash - save staged and unstaged changes to stash when u switch to other branch without commiting.
+
+git stash pop - stash changes are pop from stash
+
+git stash list
+
+git stash apply 
+   Example: git stash apply stash@{1}
+
+git stash drop
+
+UNDOING CHANGES & TIME TRAVELLING
+
+TIME TRAVELLING WITH CHECKOUT
+git checkout 
+- create new branch, restore files and undo history
+
+git checkout commithash
+- cheking out Old Commit
+
+git checkout HEAD~1 OR git checkout HEAD~2 OR git checkout HEAD~3
+- going one step back each time from head by increasing the number after head~
+
+GIT RESTORE
+
+UNDMODIFIED WITH RESTORE
+
+git restore file name (restore till head position)
+(helps in undoing changes)
+restores using head as default source
+
+git restore --source HEAD~1 fileName (restore file back to one position from head)
+Restore the contents of file to its state from the commit prior to HEAD. You can also use a commit hash as the source.
+Example: git restore --source HEAD~1 app.js
+
+UNSTAGING CHANGES WITH RESTORE
+
+git restore --staged fileName
+file is removed form staged.
+Note: file data will remain as it is.
+
+GIT RESET (not to be used with collboration)
+
+UNDOING COMMITS WITH RESET
+
+
+GIT RESET
+git reset
+
+Resets index entries and updates files in the working tree that are different between <commit> and HEAD
+
+
+PLAIN RESET
+git reset <commit-hash>(plain reset)
+will reset the repo back to a specific commit. The commits are gone.
+changes will remain as it is only commit will be removed.
+
+Hard Reset
+
+git reset --hard <commit-hash>
+remove commit with changes to particular hash
+
+REVERTING COMMITS WITH GIT REVERT
+
+git revert <commit-hash>
+mostly used due to collboration working otherwise will create lot of 
+problem if we premanantly remove the commit.
+Note: may contain merge confilicts.
+
+
+GIT WORKFLOW
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
